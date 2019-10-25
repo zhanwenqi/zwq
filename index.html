@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>詹文淇</title>
+</head>
+<style type="">
+    #shenti{
+    position: relative;
+    margin: 100px 400px;
+}
+    #shenti:hover{
+    transform:translateX(300px);
+    transition:9s;
+}
+	#box2 {
+    width: 120px;
+    height: 80px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: -49px;
+    left: -125px;
+    : none;
+    background-color: #eaeaef;
+    -webkit-transform: rotate(-51deg);
+}	
+	#box2:after {
+    content:"";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #eaeaef;
+    border-bottom: 13px solid transparent;
+}
+    .tou{
+    position: relative;
+    width: 320px;
+    height: 300px;
+    border-radius: 150px;
+    background: #07bbee;
+    box-shadow: -20px 20px 15px rgba(0,0,0,0.45);
+}
+    .yanjin1 {
+    width: 71px;
+    height: 83px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 35px;
+    position: absolute;
+    top: -41px;
+    left: 49px;
+}
+    .yanzhu1{
+    width: 14px;
+    height: 14px;
+    background: #000;
+    border-radius: 7px;
+    position: absolute;
+    top: 23px;
+    left: 42px;
+    animation: eyemove 4s linear infinite
+}
+    .yanjin2 {
+    width: 71px;
+    height: 83px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 35px;
+    position: absolute;
+    top: -41px;
+    left: 122px;
+}
+    .yanzhu2{
+    width: 14px;
+    height: 14px;
+    background: #000;
+    border-radius: 7px;
+    position: absolute;
+    top: 23px;
+    left: 46px;
+    animation: eyemove 4s linear infinite
+}
+    /*让眼睛动起来*/
+@keyframes eyemove {
+    70% {
+        margin: 0 0 0 0;
+    }
+
+    80% {
+        margin: -22px 0 0 0;
+    }
+
+    85% {
+        margin: -22px 0 0 5px;
+    }
+
+    90% {
+        margin: -22px 10px 0 0;
+    }
+
+    93% {
+        margin: -22px 0 0 0;
+    }
+
+    96% {
+        margin: 0 0 0 0;
+    }
+}
+    .bizhi {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #c93300;
+    border: 2px solid #000;
+    position: absolute;
+    top: 31px;
+    left: 107px;
+    z-index: 3;
+}
+    .bizhi_light {
+    width: 12px;
+    height: 12px;
+    box-shadow: 20px 1px 8px #fff;
+    position: absolute;
+    top: 33px;
+    left: 105px;
+    z-index: 3;
+}
+    .bailian{
+    width: 265px;
+    height: 195px;
+    border-radius: 150px;
+    position: absolute;
+    top: 75px;
+    left: 28px;
+    background: #fff;
+    position: relative;
+    box-shadow: -9px 6px 15px rgba(0,0,0,0.45);
+}
+    .shuheixian {
+    width: 3px;
+    height: 103px;
+    background: #333;
+    position: absolute;
+    top: 63px;
+    left: 125px;
+}
+    .mouth {
+    width: 159px;
+    height: 378px;
+    border-radius: 79px;
+    border-bottom: 3px solid #333;
+    position: absolute;
+    top: -212px;
+    left: 46px;
+}
+    .huxiu2 {
+    width: 60px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    z-index: 2;
+}
+    .huxiu1 {
+    width: 60px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: 124px;
+    left: 20px;
+    z-index: 2;
+    -webkit-transform: rotate(160deg);
+}
+    .huxiu3 {
+    width: 60px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: 73px;
+    left: 20px;
+    z-index: 2;
+    -webkit-transform: rotate(25deg);
+}
+    .huxiu4 {
+    width: 60px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: 100px;
+    left: 168px;
+    z-index: 2;
+}
+    .huxiu5 {
+    width: 60px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: 124px;
+    left: 168px;
+    z-index: 2;
+    -webkit-transform: rotate(196deg);
+}
+    .huxiu6 {
+    width: 60px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: 73px;
+    left: 168px;
+    z-index: 2;
+    -webkit-transform: rotate(-16deg);
+}
+    .shentizhongjian {
+    width: 220px;
+    height: 165px;
+    background: #07beea;
+    border: 2px solid #333;
+    position: absolute;
+    top: 265px;
+    left: 43px;
+}
+    .honglinjin {
+    width: 230px;
+    height: 20px;
+    background: #c40;
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+    left: -4px;
+    z-index: 4;
+}
+    .bell{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border:2px solid #000;
+    background: #f9f12a;
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.25);
+    position: absolute;
+    top: 5px;
+    left: 90px;
+}
+    .bell_line {
+    width: 36px;
+    height: 2px;
+    border: 2px solid #333;
+    position: absolute;
+    top: 10px;
+}
+    .bell_heiqiu {
+    width: 12px;
+    height: 10px;
+    background: #000;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 14px;
+}
+    .bell_heidian {
+    width: 3px;
+    height: 15px;
+    background: #000;
+    position: absolute;
+    top: 27px;
+    left: 18px;
+}
+    .bell_light {
+    width: 12px;
+    height: 12px;
+    box-shadow: 20px 1px 5px #fff;
+    position: absolute;
+}
+    .rightHand{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:272px;
+    left: 248px;
+}
+    .rightHand-arm {
+    width: 80px;
+    height: 50px;
+    background: #07beea;
+    border: 1px solid #000000;
+    z-index: -1;
+    position: relative;
+    top: 22px;
+    left: -3px;
+    -webkit-transform: rotate(35deg);
+}
+    .rightHand-shou {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    background: #fff;
+    position: absolute;
+    top: 32px;
+    left: 40px;
+    box-shadow:inset 4px -2px 4px rgba(0,0,0,0.45);
+}
+    .rightHand-armxianshi {
+    width: 5px;
+    height: 60px;
+    background: #07beea;
+    position: relative;
+    top: -47px;
+    left: 15px;
+}
+    .leftHand{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:272px;
+    left: 100px;
+}
+    .leftHand-arm {
+    width: 80px;
+    height: 50px;
+    background: #07beea;
+    border: 1px solid #000000;
+    z-index: -1;
+    position: relative;
+    top: -31px;
+    left: -31px;
+    -webkit-transform: rotate(196deg);
+}
+    .leftHand-shou {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    background: #fff;
+    position: absolute;
+    top: 254px;
+    left: -55px;
+    box-shadow: inset 4px -2px 4px rgba(0,0,0,0.45);
+}
+    .leftHand-armxianshi1{
+    width: 5px;
+    height: 25px;
+    background: #07beea;
+    position: relative;
+    top: -79px;
+    left: 43px;
+}
+    .leftHand-armxianshi2 {
+    width: 5px;
+    height: 40px;
+    background: #07beea;
+    position: relative;
+    top: -89px;
+    left: 42px;
+}
+    .dabaiquan {
+    width: 160px;
+    height: 152px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 85px;
+    position: absolute;
+    top: 242px;
+    left: 73px;
+}
+    .dabaiquanxiushi {
+    width: 103px;
+    height: 17px;
+    background: #fff;
+    position: absolute;
+    top: 243px;
+    left: 104px;
+}
+    .daizi {
+    width: 112px;
+    height: 69px;
+    box-shadow: inset 6px -2px 8px rgba(0,0,0,0.45);
+    background: #fff;
+    border-radius: 0% 0% 50% 50%/ 50% 50% 50% 50%;
+    border: 2px solid #000;
+    position: absolute;
+    top: 66px;
+    left: 22px;
+}
+    .tuifong {
+    width: 20px;
+    height: 18px;
+    background: #fff;
+    border: 2px solid #000;
+    border-bottom: none;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    top: -3px;
+    left: 141px;
+    box-shadow: inset -6px 6px 8px rgba(0,0,0,0.45);
+}
+    .zuojiao {
+    width: 125px;
+    height: 30px;
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 80px 60px 60px 40px;
+    box-shadow: -9px 7px 10px rgba(0, 0, 0, 0.35);
+    position: relative;
+    top: -5px;
+    left: 24px;
+}
+    .youjiao {
+    width: 122px;
+    height: 31px;
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 60px 40px 60px 40px;
+    box-shadow: -9px 7px 10px rgba(0, 0, 0, 0.35);
+    position: relative;
+    top: -39px;
+    left: 151px;
+}
+    .taiyang {
+    width: 150px;
+    height: 150px;
+    background: #ff0101;
+    border-radius: 89px;
+    position: absolute;
+    top: 4px;
+    left: 1174px;
+}
+    .guan1 {
+    width: 60px;
+    height: 7px;
+    background: #fff500;
+    border-radius: 64px 69px 75px 61px;
+    position: absolute;
+    top: 7px;
+    left: 1126px;
+    z-index: 2;
+    -webkit-transform: rotate(216deg);
+}
+    .guan2 {
+    width: 60px;
+    height: 7px;
+    background: #fff500;
+    border-radius: 64px 69px 75px 61px;
+    position: absolute;
+    top: 61px;
+    left: 1103px;
+    z-index: 2;
+    -webkit-transform: rotate(192deg);
+}
+    .guan3 {
+    width: 60px;
+    height: 7px;
+    background: #fff500;
+    border-radius: 64px 69px 75px 61px;
+    position: absolute;
+    top: 109px;
+    left: 1100px;
+    z-index: 2;
+    -webkit-transform: rotate(172deg);
+}
+    .guan4 {
+    width: 60px;
+    height: 7px;
+    background: #fff500;
+    border-radius: 64px 69px 75px 61px;
+    position: absolute;
+    top: 154px;
+    left: 1118px;
+    z-index: 2;
+    -webkit-transform: rotate(324deg);
+}
+    .guan5 {
+    width: 60px;
+    height: 7px;
+    background: #fff500;
+    border-radius: 64px 69px 75px 61px;
+    position: absolute;
+    top: 186px;
+    left: 1160px;
+    z-index: 2;
+    -webkit-transform: rotate(121deg);
+}
+    .guan6 {
+    width: 60px;
+    height: 7px;
+    background: #fff500;
+    border-radius: 64px 69px 75px 61px;
+    position: absolute;
+    top: 196px;
+    left: 1211px;
+    z-index: 2;
+    -webkit-transform: rotate(272deg);
+}
+    .guan7 {
+    width: 60px;
+    height: 7px;
+    background: #fff500;
+    border-radius: 64px 69px 75px 61px;
+    position: absolute;
+    top: 193px;
+    left: 1258px;
+    z-index: 2;
+    -webkit-transform: rotate(255deg);
+}
+    .guan8 {
+    width: 60px;
+    height: 7px;
+    background: #fff500;
+    border-radius: 64px 69px 75px 61px;
+    position: absolute;
+    top: 168px;
+    left: 1289px;
+    z-index: 2;
+    -webkit-transform: rotate(227deg);
+}
+	.shengzi {
+    width: 700px;
+    height: 6px;
+    background: #333;
+    position: absolute;
+    top: 292px;
+    left: -749px;
+    z-index: 2;
+}
+
+
+
+</style>
+<body style="width: 2000px height1000px">
+    <!-- 身体 -->
+    <div id="shenti">
+    	<div id="box2">不要啊，不要啊，救命啊啊啊啊啊。</div>
+    	<div class="shengzi"></div>
+        <!-- 上面 -->
+        <div class="tou">
+            <!-- 白脸 -->
+            <div class="bailian">
+                <!-- 左眼睛 -->
+                <div class="yanjin1">
+                    <div class="yanzhu1"></div>
+                </div>
+                <!-- 右眼睛 -->
+                <div class="yanjin2">
+                    <div class="yanzhu2"></div>
+                </div>
+                <!-- 鼻子 -->
+                <div class="bizhi"></div>
+                <div class="bizhi_light"></div>
+                <div class="shuheixian"></div>
+                <!-- 嘴巴 -->
+                <div class="mouth"></div>
+                <!-- 胡须 -->
+                <div class="huxiu2"></div>
+                <div class="huxiu1"></div>
+                <div class="huxiu3"></div>
+                <div class="huxiu4"></div>
+                <div class="huxiu5"></div>
+                <div class="huxiu6"></div>
+            </div>  
+        </div>
+        <!-- 中间 -->
+        <div class="shentizhongjian">
+            <div class="honglinjin">
+                <div class="bell">
+                    <div class="bell_line"></div>
+                    <div class="bell_heiqiu"></div>
+                    <div class="bell_heidian"></div>
+                    <div class="bell_light"></div>
+                </div>
+            </div>
+        </div>
+        <div class="rightHand">
+                <!--手臂-->
+                <div class="rightHand-arm"></div>
+                <!--手掌-->
+                <div class="rightHand-shou"></div>
+                <!--修饰手臂-->
+                <div class="rightHand-armxianshi"></div>
+        </div>
+        <div class="lefttHand">
+                <!--手臂-->
+                <div class="leftHand-arm"></div>
+                <!--手掌-->
+                <div class="leftHand-shou"></div>
+                <!--修饰手臂-->
+                <div class="leftHand-armxianshi1"></div>
+                 <!--修饰手臂-->
+                <div class="leftHand-armxianshi2"></div>
+        </div>
+        <div class="dabaiquan">
+            <div class="daizi"></div>
+        </div>
+        <div class="dabaiquanxiushi"></div>
+        <div class="tuifong"></div>
+        <!-- 下面 -->
+        <div class="zuojiao"></div>
+        <div class="youjiao"></div>
+    </div>
+    <div class="taiyang"></div>
+    <div class="guan1"></div>
+    <div class="guan2"></div>
+    <div class="guan3"></div>
+    <div class="guan4"></div>
+    <div class="guan5"></div>
+    <div class="guan6"></div>
+    <div class="guan7"></div>
+    <div class="guan8"></div>
+    <script>
+
+    window.onload = function(){
+
+        var shenti = document.getElementById("shenti");
+
+        var box2 = document.getElementById("box2");
+
+        shenti.onmouseover = function(){
+
+            box2.style.display = "block";
+            shenti.style.display = "block";
+        };
+
+        shenti.onmouseout = function(){
+
+            box2.style.display = "none";
+
+        };
+
+    };
+
+</script>
+</body>
+</html>
